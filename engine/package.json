@@ -1,0 +1,19 @@
+{
+  "name": "@auction/engine",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc -p tsconfig.json && tsc -p tsconfig.test.json",
+    "play": "tsx scripts/play.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.13.3",
+    "typescript": "~6.0.2",
+    "vitest": "^4.1.11",
+    "tsx": "^4.20.0"
+  }
+}

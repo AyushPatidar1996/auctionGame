@@ -1,0 +1,23 @@
+{
+  "rulesVersion": 1,
+  "currency": "lakhs",
+  "homeCountry": "India",
+  "teams": 10,
+  "purse": 2500,
+  "squad": { "min": 15, "max": 25, "maxOverseas": 8 },
+  "lineup": { "size": 12, "maxOverseas": 4 },
+  "pool": {
+    "selection": "stratified-seeded",
+    "composition": { "marquee": 12, "A": 24, "B": 40, "C": 104 }
+  },
+  "tierBasePrice": { "marquee": 200, "A": 100, "B": 50, "C": 20 },
+  "tierOrder": ["marquee", "A", "B", "C"],
+  "lotOrder": "by-tier-then-shuffle",
+  "increments": [
+    { "upTo": 50,   "step": 5 },
+    { "upTo": 100,  "step": 10 },
+    { "upTo": 500,  "step": 25 },
+    { "upTo": null, "step": 50 }
+  ],
+  "timer": { "bidWindowMs": 10000, "resetOnBid": true }
+}

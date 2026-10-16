@@ -1,0 +1,18 @@
+{
+  "name": "auction-game",
+  "private": true,
+  "workspaces": [
+    "engine",
+    "web"
+  ],
+  "scripts": {
+    "test": "npm run test --workspaces --if-present",
+    "typecheck": "npm run typecheck -w @auction/engine && npm run typecheck -w web",
+    "dev": "npm run dev -w web",
+    "build": "npm run build -w web",
+    "play": "npm run play -w @auction/engine --"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}
